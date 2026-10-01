@@ -1,0 +1,2469 @@
+<!doctype html>
+<html class="dark" lang="pt-BR">
+  <head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <meta content="web_standard" name="shell-type" />
+    <title>JK Aquecedores | Assistência Técnica Especializada</title>
+    <link href="https://fonts.googleapis.com" rel="preconnect" />
+    <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&amp;family=Plus+Jakarta+Sans:wght@600;700;800&amp;display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      @layer base {
+        html,
+        body {
+          margin: 0;
+          padding: 0;
+        }
+        body {
+          overscroll-behavior: none;
+        }
+        main > :first-child {
+          margin-top: 0 !important;
+        }
+        main > :last-child {
+          margin-bottom: 0 !important;
+        }
+      }
+      ::-webkit-scrollbar {
+        display: none;
+      }
+
+      @media (max-width: 767px) {
+        body {
+          overflow-x: hidden;
+        }
+
+        .top-strip {
+          display: none !important;
+        }
+
+        .mobile-header {
+          min-height: 4.5rem;
+          height: auto;
+          padding-top: 0.75rem;
+          padding-bottom: 0.75rem;
+        }
+
+        .mobile-brand {
+          min-width: 0;
+          flex: 1;
+        }
+
+        .mobile-brand a {
+          min-width: 0;
+          gap: 0.5rem !important;
+        }
+
+        .mobile-brand .brand-badge {
+          width: 2.9rem !important;
+          height: 2.9rem !important;
+          min-width: 2.9rem !important;
+          min-height: 2.9rem !important;
+          padding: 0 !important;
+          flex-shrink: 0;
+        }
+
+        .mobile-brand .brand-badge img {
+          width: 100% !important;
+          height: 100% !important;
+          display: block;
+        }
+
+        .mobile-brand .brand-copy {
+          min-width: 0;
+          display: flex;
+          flex-direction: column;
+          line-height: 1.1;
+          margin-left: 0;
+        }
+
+        .mobile-brand .brand-copy span:first-child {
+          font-size: 1.1rem !important;
+          white-space: nowrap;
+        }
+
+        .mobile-logo-copy {
+          display: none;
+        }
+
+        .mobile-cta {
+          padding-left: 0.875rem !important;
+          padding-right: 0.875rem !important;
+          font-size: 0.7rem !important;
+          line-height: 1.1 !important;
+          white-space: nowrap;
+        }
+
+        .wa-icon {
+          width: 18px;
+          height: 18px;
+          display: inline-block;
+          vertical-align: middle;
+          flex-shrink: 0;
+        }
+
+        .wa-icon-lg {
+          width: 26px;
+          height: 26px;
+          display: inline-block;
+          vertical-align: middle;
+          flex-shrink: 0;
+        }
+
+        .floating-wa {
+          box-shadow: 0 12px 30px rgba(0, 185, 84, 0.35);
+          border: 1px solid rgba(255, 255, 255, 0.14);
+          animation: waPulse 2.2s ease-in-out infinite;
+        }
+
+        @keyframes waPulse {
+          0%,
+          100% {
+            transform: scale(1);
+            box-shadow: 0 12px 30px rgba(0, 185, 84, 0.35);
+          }
+          50% {
+            transform: scale(1.04);
+            box-shadow: 0 12px 34px rgba(0, 185, 84, 0.5);
+          }
+        }
+
+        .nav-toggle {
+          display: inline-flex !important;
+          background: linear-gradient(180deg, rgba(40, 40, 44, 0.96), rgba(27, 27, 30, 0.96)) !important;
+          border: 1px solid rgba(255, 180, 171, 0.18) !important;
+          color: #e5e1e6 !important;
+          box-shadow: 0 6px 18px rgba(0, 0, 0, 0.22) !important;
+        }
+
+        .mobile-nav-panel {
+          display: none;
+          position: absolute;
+          inset: 100% 0 auto 0;
+          background: rgba(19, 19, 22, 0.98);
+          border-top: 1px solid rgba(255, 255, 255, 0.08);
+          box-shadow: 0 12px 32px rgba(0, 0, 0, 0.25);
+          backdrop-filter: blur(12px);
+          z-index: 40;
+        }
+
+        .mobile-nav-panel.open {
+          display: block;
+        }
+
+        .mobile-nav-panel nav {
+          display: flex;
+          flex-direction: column;
+          padding: 0.75rem 0.875rem 1rem;
+          gap: 0.25rem;
+        }
+
+        .mobile-nav-panel nav a {
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          width: 100%;
+          padding: 0.8rem 0.9rem;
+          border-radius: 0.8rem;
+          color: #e5e1e6;
+          text-decoration: none;
+          font-size: 0.95rem;
+          background: rgba(255, 255, 255, 0.015);
+          border: 1px solid transparent;
+          transition: all 0.2s ease;
+        }
+
+        .mobile-menu-wa {
+          border: 1px solid rgba(255, 255, 255, 0.12);
+          background: linear-gradient(180deg, rgba(26, 170, 94, 0.2), rgba(19, 120, 65, 0.25));
+          color: #e7fff3;
+        }
+
+        .mobile-menu-wa:hover {
+          transform: translateY(-1px);
+          box-shadow: 0 10px 26px rgba(0, 185, 84, 0.28);
+        }
+
+        .mobile-nav-panel nav a::after {
+          content: 'arrow_forward';
+          font-family: 'Material Symbols Outlined';
+          font-size: 18px;
+          opacity: 0.7;
+        }
+
+        .mobile-nav-panel nav a.mobile-menu-wa::after {
+          content: '';
+        }
+
+        .mobile-nav-panel nav a:hover {
+          background: rgba(255, 180, 171, 0.08);
+          border-color: rgba(255, 180, 171, 0.16);
+          color: #fff6f5;
+        }
+
+        .mobile-hero {
+          padding-top: 2.5rem !important;
+          padding-bottom: 2.5rem !important;
+        }
+
+        .mobile-title {
+          font-size: clamp(2.1rem, 9vw, 3rem) !important;
+          line-height: 1.08 !important;
+          letter-spacing: -0.03em !important;
+        }
+
+        .mobile-subtitle {
+          font-size: 1rem !important;
+          line-height: 1.6 !important;
+        }
+
+        .hero-cta-group {
+          flex-direction: column !important;
+          align-items: stretch !important;
+        }
+
+        .hero-cta-group > a {
+          width: 100%;
+        }
+
+        .hero-phone-strip {
+          flex-direction: column !important;
+          align-items: flex-start !important;
+          gap: 0.5rem !important;
+        }
+
+        .hero-visual-wrap {
+          height: 260px !important;
+        }
+
+        .floating-pill {
+          font-size: 0.7rem !important;
+          padding: 0.5rem 0.75rem !important;
+        }
+
+        .metrics-grid {
+          grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+        }
+
+        section {
+          padding-top: 2.25rem !important;
+          padding-bottom: 2.25rem !important;
+        }
+
+        h1,
+        h2,
+        h3,
+        h4 {
+          letter-spacing: -0.02em !important;
+        }
+
+        h2,
+        .font-headline-xl {
+          font-size: clamp(1.75rem, 7vw, 2.3rem) !important;
+          line-height: 1.15 !important;
+        }
+
+        h3,
+        .font-headline-md {
+          font-size: 1.1rem !important;
+          line-height: 1.35 !important;
+        }
+
+        p,
+        .font-body-md,
+        .font-body-sm,
+        .font-body-lg {
+          font-size: 0.96rem !important;
+          line-height: 1.6 !important;
+        }
+
+        .max-w-7xl,
+        .mx-auto {
+          padding-left: 1rem !important;
+          padding-right: 1rem !important;
+        }
+
+        #marcas-atendidas .grid,
+        #depoimentos .grid,
+        #vantagens .grid,
+        #servicos .grid {
+          grid-template-columns: 1fr !important;
+        }
+
+        #marcas-atendidas .p-space-lg,
+        #servicos .p-space-lg,
+        #vantagens .p-space-lg,
+        #depoimentos .p-space-lg,
+        .bg-surface-container-low,
+        .bg-surface-container,
+        .bg-surface-container-high {
+          padding: 1rem !important;
+        }
+
+        .shadow-md,
+        .shadow-lg,
+        .shadow-xl,
+        .shadow-2xl {
+          box-shadow: 0 8px 18px rgba(0, 0, 0, 0.18) !important;
+        }
+      }
+
+      @media (min-width: 768px) {
+        .nav-toggle {
+          display: none !important;
+        }
+
+        .mobile-nav-panel {
+          display: none !important;
+        }
+      }
+    </style>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              "surface-tint": "#ffb4ab",
+              primary: "#ffb4ab",
+              "error-container": "#93000a",
+              "surface-bright": "#39393c",
+              "tertiary-fixed-dim": "#c1c7cf",
+              secondary: "#4ae176",
+              "tertiary-container": "#6c737a",
+              surface: "#131316",
+              "on-tertiary-fixed-variant": "#41474e",
+              "surface-container-highest": "#353438",
+              "inverse-primary": "#bf0715",
+              "on-tertiary": "#2b3137",
+              "on-surface": "#e5e1e6",
+              "outline-variant": "#5c403c",
+              "on-secondary-container": "#004119",
+              tertiary: "#c1c7cf",
+              "surface-container-lowest": "#0e0e11",
+              "surface-container-low": "#1b1b1e",
+              "secondary-container": "#00b954",
+              "surface-container": "#1f1f22",
+              "on-tertiary-container": "#f5f9ff",
+              "on-secondary-fixed-variant": "#005321",
+              outline: "#ac8884",
+              "tertiary-fixed": "#dde3eb",
+              "surface-dim": "#131316",
+              "on-surface-variant": "#e6bdb8",
+              "surface-container-high": "#2a2a2d",
+              "on-tertiary-fixed": "#161c22",
+              "primary-fixed-dim": "#ffb4ab",
+              "surface-variant": "#353438",
+              "inverse-surface": "#e5e1e6",
+              "on-primary-container": "#fff6f5",
+              "inverse-on-surface": "#303033",
+              "on-primary": "#690005",
+              "on-secondary": "#003915",
+              background: "#131316",
+              "on-primary-fixed-variant": "#93000b",
+              "on-error-container": "#ffdad6",
+              "secondary-fixed": "#6bff8f",
+              "primary-container": "#dc2626",
+              "on-primary-fixed": "#410002",
+              error: "#ffb4ab",
+              "on-background": "#e5e1e6",
+              "on-error": "#690005",
+              "primary-fixed": "#ffdad6",
+              "on-secondary-fixed": "#002109",
+              "secondary-fixed-dim": "#4ae176",
+            },
+            borderRadius: {
+              DEFAULT: "0.25rem",
+              lg: "0.5rem",
+              xl: "0.75rem",
+              full: "9999px",
+            },
+            spacing: {
+              "gutter-mobile": "1rem",
+              "space-lg": "1.5rem",
+              "space-xs": "0.25rem",
+              "margin-mobile": "1.25rem",
+              "space-2xl": "4rem",
+              "space-md": "1rem",
+              gutter: "1.5rem",
+              "space-xl": "2.5rem",
+              margin: "2rem",
+              "space-sm": "0.5rem",
+            },
+            fontFamily: {
+              "body-md": ["Inter"],
+              "headline-md": ["Plus Jakarta Sans"],
+              "headline-lg-mobile": ["Plus Jakarta Sans"],
+              "display-hero": ["Plus Jakarta Sans"],
+              "headline-lg": ["Plus Jakarta Sans"],
+              "body-sm": ["Inter"],
+              "headline-xl": ["Plus Jakarta Sans"],
+              "label-sm": ["Plus Jakarta Sans"],
+              "headline-xl-mobile": ["Plus Jakarta Sans"],
+              "label-lg": ["Plus Jakarta Sans"],
+              "label-md": ["Plus Jakarta Sans"],
+              "display-hero-mobile": ["Plus Jakarta Sans"],
+              "body-lg": ["Inter"],
+            },
+            fontSize: {
+              "body-md": ["16px", { lineHeight: "24px", fontWeight: "400" }],
+              "headline-md": [
+                "20px",
+                { lineHeight: "28px", fontWeight: "600" },
+              ],
+              "headline-lg-mobile": [
+                "22px",
+                {
+                  lineHeight: "30px",
+                  letterSpacing: "-0.01em",
+                  fontWeight: "700",
+                },
+              ],
+              "display-hero": [
+                "56px",
+                {
+                  lineHeight: "64px",
+                  letterSpacing: "-0.02em",
+                  fontWeight: "800",
+                },
+              ],
+              "headline-lg": [
+                "30px",
+                {
+                  lineHeight: "38px",
+                  letterSpacing: "-0.01em",
+                  fontWeight: "700",
+                },
+              ],
+              "body-sm": ["14px", { lineHeight: "20px", fontWeight: "400" }],
+              "headline-xl": [
+                "40px",
+                {
+                  lineHeight: "48px",
+                  letterSpacing: "-0.015em",
+                  fontWeight: "700",
+                },
+              ],
+              "label-sm": [
+                "12px",
+                {
+                  lineHeight: "16px",
+                  letterSpacing: "0.04em",
+                  fontWeight: "600",
+                },
+              ],
+              "headline-xl-mobile": [
+                "28px",
+                {
+                  lineHeight: "36px",
+                  letterSpacing: "-0.015em",
+                  fontWeight: "700",
+                },
+              ],
+              "label-lg": [
+                "16px",
+                {
+                  lineHeight: "22px",
+                  letterSpacing: "0.01em",
+                  fontWeight: "700",
+                },
+              ],
+              "label-md": [
+                "14px",
+                {
+                  lineHeight: "18px",
+                  letterSpacing: "0.02em",
+                  fontWeight: "600",
+                },
+              ],
+              "display-hero-mobile": [
+                "36px",
+                {
+                  lineHeight: "42px",
+                  letterSpacing: "-0.02em",
+                  fontWeight: "800",
+                },
+              ],
+              "body-lg": ["18px", { lineHeight: "28px", fontWeight: "400" }],
+            },
+          },
+        },
+      };
+    </script>
+  </head>
+  <body
+    class="bg-background font-body-md text-body-md text-on-background selection:bg-primary-container selection:text-on-primary-container"
+  >
+    <header
+      class="fixed top-0 left-0 w-full z-50 bg-surface/90 backdrop-blur-xl shadow-[0_1px_12px_rgba(0,0,0,0.45)]"
+    >
+      <div
+        class="top-strip bg-surface-container-lowest border-b border-surface-container-highest/40"
+      >
+        <div
+          class="max-w-7xl mx-auto px-margin flex items-center justify-between h-10 font-label-sm text-label-sm"
+        >
+          <div class="flex items-center gap-space-md">
+            <span class="flex items-center gap-space-xs text-secondary"
+              ><span class="material-symbols-outlined text-[14px]"
+                >emergency</span
+              ><span class="font-label-sm text-label-sm text-on-surface"
+                >Plantão Emergencial SP &amp; Região Metropolitana</span
+              ></span
+            ><span class="hidden lg:inline text-surface-bright">|</span
+            ><span
+              class="hidden lg:flex items-center gap-space-xs text-on-surface-variant"
+              ><span class="material-symbols-outlined text-[14px]"
+                >schedule</span
+              >Seg a Sáb 24h • Domingo e Feriados sob escala</span
+            >
+          </div>
+          <div class="flex items-center gap-space-lg text-on-surface-variant">
+            <a
+              class="hidden sm:flex items-center gap-space-xs hover:text-secondary transition-colors"
+              href="tel:11985633946"
+              ><span class="material-symbols-outlined text-[14px]">call</span
+              ><span class="">(11) 98563-3946</span></a
+            ><a
+              class="hidden md:flex items-center gap-space-xs hover:text-secondary transition-colors"
+              href="tel:11997371408"
+              ><span class="material-symbols-outlined text-[14px]"
+                >phone_in_talk</span
+              ><span class="">(11) 99737-1408</span></a
+            ><a
+              class="hidden xl:flex items-center gap-space-xs hover:text-primary transition-colors"
+              href="mailto:alexsanderalberto278@gmail.com"
+              ><span class="material-symbols-outlined text-[14px]">mail</span
+              ><span class="">alexsanderalberto278@gmail.com</span></a
+            ><a
+              class="flex items-center gap-space-xs hover:text-primary transition-colors"
+              href="https://instagram.com/jk_aquecedores"
+              rel="noopener noreferrer"
+              target="_blank"
+              ><span class="material-symbols-outlined text-[14px]"
+                >photo_camera</span
+              ><span class="">@jk_aquecedores</span></a
+            >
+          </div>
+        </div>
+      </div>
+      <div
+        class="mobile-header h-20 max-w-7xl mx-auto px-margin flex items-center justify-between"
+      >
+        <div class="mobile-brand flex items-center gap-space-md">
+          <a
+            class="flex items-center gap-space-sm group"
+            data-path="inicio"
+            href="#"
+            ><div
+              class="brand-badge p-1 rounded-full bg-surface-container-high ring-1 ring-primary/40 group-hover:ring-primary transition-all"
+              style="width: 3.5rem; height: 3.5rem;"
+            >
+              <img
+                alt="Profile"
+                class="w-full h-full rounded-full object-cover"
+                src="assets/jk_logo.png"
+              />
+            </div>
+            <div class="brand-copy flex flex-col min-w-0">
+              <span
+                class="font-headline-md text-headline-md tracking-tight text-on-surface uppercase"
+                >JK
+                <span
+                  class="text-primary-container font-headline-md text-headline-md"
+                  >Aquecedores</span
+                ></span
+              ><span
+                class="mobile-logo-copy font-label-sm text-label-sm text-on-surface-variant hidden sm:block"
+                >Manutenção Preventiva</span
+              >
+            </div></a
+          >
+        </div>
+        <nav
+          class="hidden lg:flex items-center gap-space-lg font-label-md text-label-md"
+          data-active-classes="text-primary font-bold"
+        >
+          <a
+            class="text-on-surface-variant hover:text-on-surface transition-colors py-2"
+            data-path="inicio"
+            href="#"
+            >Início</a
+          ><a
+            class="text-on-surface-variant hover:text-on-surface transition-colors py-2"
+            data-path="servicos"
+            href="#"
+            >Serviços</a
+          ><a
+            class="text-on-surface-variant hover:text-on-surface transition-colors py-2"
+            data-path="marcas-atendidas"
+            href="#"
+            >Marcas Atendidas</a
+          ><a
+            class="text-on-surface-variant hover:text-on-surface transition-colors py-2"
+            data-path="vantagens"
+            href="#"
+            >Vantagens</a
+          ><a
+            class="text-on-surface-variant hover:text-on-surface transition-colors py-2"
+            data-path="depoimentos"
+            href="#"
+            >Depoimentos</a
+          ><a
+            class="text-on-surface-variant hover:text-on-surface transition-colors py-2"
+            data-path="faq"
+            href="#"
+            >FAQ</a
+          ><a
+            class="text-on-surface-variant hover:text-on-surface transition-colors py-2"
+            data-path="contato"
+            href="#"
+            >Contato</a
+          >
+        </nav>
+        <div class="flex items-center gap-space-sm">
+          <button
+            type="button"
+            aria-expanded="false"
+            aria-controls="mobile-menu"
+            data-nav-toggle
+            class="nav-toggle inline-flex items-center justify-center rounded-full border border-white/10 bg-surface-container-high p-2.5 text-on-surface shadow-md lg:hidden"
+            aria-label="Abrir menu"
+          >
+            <span class="material-symbols-outlined text-[24px]">menu</span>
+          </button>
+        </div>
+      </div>
+
+      <div id="mobile-menu" class="mobile-nav-panel lg:hidden" aria-label="Menu mobile">
+        <nav data-active-classes="text-primary font-bold">
+          <a class="text-on-surface-variant hover:text-on-surface transition-colors py-2" data-path="inicio" href="#">Início</a>
+          <a class="text-on-surface-variant hover:text-on-surface transition-colors py-2" data-path="servicos" href="#servicos">Serviços</a>
+          <a class="text-on-surface-variant hover:text-on-surface transition-colors py-2" data-path="marcas-atendidas" href="#marcas-atendidas">Marcas Atendidas</a>
+          <a class="text-on-surface-variant hover:text-on-surface transition-colors py-2" data-path="vantagens" href="#">Vantagens</a>
+          <a class="text-on-surface-variant hover:text-on-surface transition-colors py-2" data-path="depoimentos" href="#">Depoimentos</a>
+          <a class="text-on-surface-variant hover:text-on-surface transition-colors py-2" data-path="faq" href="#">FAQ</a>
+          <a class="text-on-surface-variant hover:text-on-surface transition-colors py-2" data-path="contato" href="#">Contato</a>
+          <a
+            class="mobile-menu-wa mt-2 flex items-center justify-center gap-2 rounded-full bg-secondary-container px-4 py-3 text-sm font-semibold text-on-secondary-container shadow-[0_8px_24px_rgba(0,185,84,0.28)] hover:bg-secondary hover:text-on-secondary transition-all"
+            href="https://wa.me/5511985633946?text=Ol%C3%A1%2C%20preciso%20de%20atendimento%20para%20aquecedor%20a%20g%C3%A1s"
+            rel="noopener noreferrer"
+            target="_blank"
+            ><svg class="wa-icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false" style="width: 18px; height: 18px;">
+              <path fill="currentColor" d="M12.04 2C6.58 2 2.15 6.36 2.15 11.8c0 2.09.68 4.1 1.85 5.75L2 22l4.64-1.94A9.76 9.76 0 0 0 12.04 21c5.46 0 9.9-4.36 9.9-9.8S17.5 2 12.04 2Zm0 17.9a7.98 7.98 0 0 1-4.08-1.13l-.29-.17-2.75 1.15 1.13-2.68-.18-.28A8.08 8.08 0 1 1 12.04 19.9Zm4.42-6.02c-.24-.12-1.44-.71-1.66-.79-.22-.08-.38-.12-.54.12-.16.24-.62.79-.76.95-.14.16-.28.18-.52.06-.24-.12-1.02-.38-1.94-1.2-.72-.64-1.2-1.43-1.34-1.67-.14-.24-.02-.37.1-.49.1-.1.24-.28.36-.42.12-.14.16-.24.24-.4.08-.16.04-.3-.02-.42-.06-.12-.54-1.3-.74-1.78-.2-.48-.4-.42-.54-.43h-.46c-.16 0-.42.06-.64.3-.22.24-.84.82-.84 2s.86 2.31.98 2.47c.12.16 1.67 2.56 4.05 3.58.57.25 1.02.4 1.37.51.57.18 1.09.15 1.5.09.46-.07 1.44-.59 1.64-1.16.21-.57.21-1.06.15-1.16-.06-.1-.22-.16-.46-.28Z"/>
+            </svg><span>Chamar no WhatsApp</span></a
+          >
+        </nav>
+      </div>
+    </header>
+    <script>
+      document.addEventListener('DOMContentLoaded', function () {
+        const toggle = document.querySelector('[data-nav-toggle]');
+        const menu = document.getElementById('mobile-menu');
+
+        if (!toggle || !menu) {
+          return;
+        }
+
+        const closeMenu = () => {
+          menu.classList.remove('open');
+          toggle.setAttribute('aria-expanded', 'false');
+          toggle.innerHTML = '<span class="material-symbols-outlined text-[24px]">menu</span>';
+        };
+
+        toggle.addEventListener('click', function () {
+          const isOpen = menu.classList.toggle('open');
+          toggle.setAttribute('aria-expanded', String(isOpen));
+          toggle.innerHTML = isOpen
+            ? '<span class="material-symbols-outlined text-[24px]">close</span>'
+            : '<span class="material-symbols-outlined text-[24px]">menu</span>';
+        });
+
+        menu.querySelectorAll('a').forEach((link) => {
+          link.addEventListener('click', closeMenu);
+        });
+      });
+    </script>
+
+    <main class="w-full pt-20 bg-background">
+      <div class="flex flex-col w-full text-on-surface">
+        <!-- HERO SECTION -->
+        <section
+          class="mobile-hero relative w-full overflow-hidden bg-surface-container-lowest py-space-2xl md:py-32"
+        >
+          <!-- Atmospheric Thermal Glow Backdrops -->
+          <div
+            class="absolute -top-32 -left-32 w-96 h-96 rounded-full bg-primary-container/20 blur-[130px] pointer-events-none"
+          ></div>
+          <div
+            class="absolute top-1/2 -right-32 w-[30rem] h-[30rem] rounded-full bg-primary/10 blur-[150px] pointer-events-none"
+          ></div>
+          <div class="max-w-7xl mx-auto px-margin relative z-10">
+            <div
+              class="grid grid-cols-1 lg:grid-cols-12 gap-space-xl items-center"
+            >
+              <!-- Left Column: Copy & Conversions -->
+              <div class="lg:col-span-7 flex flex-col gap-space-lg">
+                <!-- Badge -->
+                <div
+                  class="inline-flex items-center gap-space-xs px-space-md py-1.5 rounded-full bg-surface-container-high w-fit shadow-md"
+                >
+                  <span
+                    class="material-symbols-outlined text-primary-container text-[18px]"
+                    >local_fire_department</span
+                  >
+                  <span
+                    class="font-label-sm text-label-sm text-primary tracking-wide uppercase"
+                    >Atendimento Rápido em Toda SP &amp; Região
+                    Metropolitana</span
+                  >
+                </div>
+                <!-- Main Title -->
+                <h1
+                  class="mobile-title font-display-hero text-display-hero-mobile md:text-display-hero font-extrabold text-on-surface leading-tight tracking-tight"
+                >
+                  Manutenção, Instalação e Reparo de Aquecedores a Gás com
+                  <span class="text-primary-container">Segurança Absoluta</span
+                  >.
+                </h1>
+                <!-- Subtitle -->
+                <p
+                  class="mobile-subtitle font-body-lg text-body-lg text-on-surface-variant max-w-2xl"
+                >
+                  Especialistas credenciados em manutenção preventiva e
+                  corretiva para as principais marcas do mercado. Diagnóstico
+                  técnico computadorizado, peças 100% originais e tranquilidade
+                  garantida para o seu banho quente.
+                </p>
+                <!-- CTAs -->
+                <div
+                  class="hero-cta-group flex flex-col sm:flex-row items-stretch sm:items-center gap-space-md pt-space-xs"
+                >
+                  <a
+                    class="flex items-center justify-center gap-space-xs px-space-xl py-4 rounded-xl bg-secondary-container text-on-secondary-container font-label-lg text-label-lg shadow-xl hover:bg-secondary hover:text-on-secondary transition-all transform hover:-translate-y-0.5"
+                    href="https://wa.me/5511985633946?text=Ol%C3%A1%2C%20gostaria%20de%20solicitar%20um%20or%C3%A7amento%20para%20meu%20aquecedor%20a%20g%C3%A1s"
+                    rel="noopener noreferrer"
+                    target="_blank"
+                  >
+                    <svg class="wa-icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false" style="width: 18px; height: 18px;">
+                      <path fill="currentColor" d="M12.04 2C6.58 2 2.15 6.36 2.15 11.8c0 2.09.68 4.1 1.85 5.75L2 22l4.64-1.94A9.76 9.76 0 0 0 12.04 21c5.46 0 9.9-4.36 9.9-9.8S17.5 2 12.04 2Zm0 17.9a7.98 7.98 0 0 1-4.08-1.13l-.29-.17-2.75 1.15 1.13-2.68-.18-.28A8.08 8.08 0 1 1 12.04 19.9Zm4.42-6.02c-.24-.12-1.44-.71-1.66-.79-.22-.08-.38-.12-.54.12-.16.24-.62.79-.76.95-.14.16-.28.18-.52.06-.24-.12-1.02-.38-1.94-1.2-.72-.64-1.2-1.43-1.34-1.67-.14-.24-.02-.37.1-.49.1-.1.24-.28.36-.42.12-.14.16-.24.24-.4.08-.16.04-.3-.02-.42-.06-.12-.54-1.3-.74-1.78-.2-.48-.4-.42-.54-.43h-.46c-.16 0-.42.06-.64.3-.22.24-.84.82-.84 2s.86 2.31.98 2.47c.12.16 1.67 2.56 4.05 3.58.57.25 1.02.4 1.37.51.57.18 1.09.15 1.5.09.46-.07 1.44-.59 1.64-1.16.21-.57.21-1.06.15-1.16-.06-.1-.22-.16-.46-.28Z"/>
+                    </svg>
+                    <span class="">Solicitar Orçamento no WhatsApp</span>
+                  </a>
+                  <a
+                    class="flex items-center justify-center gap-space-xs px-space-lg py-4 rounded-xl bg-surface-container text-on-surface font-label-lg text-label-lg shadow-md hover:bg-surface-container-high transition-all"
+                    href="#servicos"
+                  >
+                    <span class="material-symbols-outlined text-[20px]"
+                      >handyman</span
+                    >
+                    <span class="">Ver Serviços &amp; Marcas</span>
+                  </a>
+                </div>
+                <!-- Phone Fast Strip -->
+                <div
+                  class="hero-phone-strip flex items-center gap-space-lg pt-space-sm font-label-sm text-label-sm text-on-surface-variant flex-wrap"
+                >
+                  <a
+                    class="flex items-center gap-space-xs hover:text-secondary transition-colors"
+                    href="tel:11985633946"
+                  >
+                    <span
+                      class="material-symbols-outlined text-[16px] text-secondary"
+                      >phone_iphone</span
+                    >
+                    <span class="font-bold text-on-surface"
+                      >(11) 98563-3946</span
+                    >
+                    (Alexsander)
+                  </a>
+                  <span class="text-surface-bright">•</span>
+                  <a
+                    class="flex items-center gap-space-xs hover:text-secondary transition-colors"
+                    href="tel:11997371408"
+                  >
+                    <span
+                      class="material-symbols-outlined text-[16px] text-secondary"
+                      >call</span
+                    >
+                    <span class="font-bold text-on-surface"
+                      >(11) 99737-1408</span
+                    >
+                    (Comercial)
+                  </a>
+                </div>
+              </div>
+              <!-- Right Column: Visual Hero Card & Proof -->
+              <div class="lg:col-span-5 relative">
+                <div
+                  class="relative rounded-2xl overflow-hidden bg-surface-container-low shadow-2xl p-space-sm"
+                >
+                  <div
+                    class="hero-visual-wrap relative w-full h-[380px] rounded-xl overflow-hidden"
+                  >
+                    <img
+                      class="w-full h-full object-cover"
+                      data-alt="A certified gas heater technician in professional dark workwear inspecting a modern digital wall-mounted gas water heater, precision tools, clean high-tech utility area, warm directional lighting with deep carbon shadows and subtle red indicator glow"
+                      src="https://lh3.googleusercontent.com/aida-public/AB6AXuDk_ywv3jlQO30rFq1d8bxMKqRYJ7IA5ckMX0a0xZkwQ_9CvRHkzWRZElOD9pLSRtIRNdyTNrVu2SsEkcVCyOxgtJ3RqOftE8IVGxwZG0L3oNqMCgK8sb8Lp127-Uh6ThX1cBoYSiCYTPSYQpLyuwOixAmYdsGNmWGL7e3TdpcYVyedM2KlOvlDgEmyZ6QRJRmhTQFrWWnvRKMSz6UdV2h-u64psRTAOBZcQQV-ajCfIkzqsID7U9SC"
+                    />
+                    <div
+                      class="absolute inset-0 bg-gradient-to-t from-surface-container-lowest via-surface-container-lowest/40 to-transparent"
+                    ></div>
+                    <!-- Floating Pill on top of photo -->
+                    <div
+                      class="floating-pill absolute top-4 left-4 bg-surface-container-highest/90 backdrop-blur-md px-space-md py-2 rounded-full flex items-center gap-space-xs text-on-surface shadow-lg"
+                    >
+                      <span
+                        class="w-2.5 h-2.5 rounded-full bg-secondary animate-pulse"
+                      ></span>
+                      <span class="font-label-sm text-label-sm"
+                        >Equipe Móvel Disponível em SP</span
+                      >
+                    </div>
+                    <!-- Overlaid Guarantee Badge inside image -->
+                    <div
+                      class="absolute bottom-4 left-4 right-4 bg-surface/90 backdrop-blur-xl p-space-md rounded-xl flex items-center justify-between shadow-xl"
+                    >
+                      <div class="flex items-center gap-space-sm">
+                        <div
+                          class="p-2 rounded-lg bg-primary-container text-on-primary-container"
+                        >
+                          <span class="material-symbols-outlined text-[24px]"
+                            >verified_user</span
+                          >
+                        </div>
+                        <div class="flex flex-col">
+                          <span
+                            class="font-headline-md text-headline-md leading-none text-on-surface"
+                            >90 Dias de Garantia</span
+                          >
+                          <span
+                            class="font-body-sm text-body-sm text-on-surface-variant"
+                            >Em peças originais e mão de obra</span
+                          >
+                        </div>
+                      </div>
+                      <span
+                        class="material-symbols-outlined text-secondary text-[24px]"
+                        >check_circle</span
+                      >
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- Quick Metrics Ribbon -->
+            <div
+              class="metrics-grid mt-space-2xl grid grid-cols-2 lg:grid-cols-4 gap-space-md"
+            >
+              <div
+                class="p-space-lg rounded-xl bg-surface-container-low shadow-md flex items-center gap-space-md hover:bg-surface-container transition-colors"
+              >
+                <div
+                  class="p-3 rounded-lg bg-surface-container-high text-primary-container"
+                >
+                  <span class="material-symbols-outlined text-[28px]"
+                    >history_toggle_off</span
+                  >
+                </div>
+                <div>
+                  <div
+                    class="font-headline-xl text-headline-xl font-extrabold text-on-surface"
+                  >
+                    +10 Anos
+                  </div>
+                  <div
+                    class="font-label-sm text-label-sm text-on-surface-variant"
+                  >
+                    Experiência Técnica
+                  </div>
+                </div>
+              </div>
+              <div
+                class="p-space-lg rounded-xl bg-surface-container-low shadow-md flex items-center gap-space-md hover:bg-surface-container transition-colors"
+              >
+                <div
+                  class="p-3 rounded-lg bg-surface-container-high text-secondary"
+                >
+                  <span class="material-symbols-outlined text-[28px]"
+                    >verified</span
+                  >
+                </div>
+                <div>
+                  <div
+                    class="font-headline-xl text-headline-xl font-extrabold text-on-surface"
+                  >
+                    +3.500
+                  </div>
+                  <div
+                    class="font-label-sm text-label-sm text-on-surface-variant"
+                  >
+                    Aquecedores Revisados
+                  </div>
+                </div>
+              </div>
+              <div
+                class="p-space-lg rounded-xl bg-surface-container-low shadow-md flex items-center gap-space-md hover:bg-surface-container transition-colors"
+              >
+                <div
+                  class="p-3 rounded-lg bg-surface-container-high text-primary-container"
+                >
+                  <span class="material-symbols-outlined text-[28px]"
+                    >emergency</span
+                  >
+                </div>
+                <div>
+                  <div
+                    class="font-headline-xl text-headline-xl font-extrabold text-on-surface"
+                  >
+                    24 Horas
+                  </div>
+                  <div
+                    class="font-label-sm text-label-sm text-on-surface-variant"
+                  >
+                    Atendimento Emergencial
+                  </div>
+                </div>
+              </div>
+              <div
+                class="p-space-lg rounded-xl bg-surface-container-low shadow-md flex items-center gap-space-md hover:bg-surface-container transition-colors"
+              >
+                <div
+                  class="p-3 rounded-lg bg-surface-container-high text-secondary"
+                >
+                  <span class="material-symbols-outlined text-[28px]"
+                    >engineering</span
+                  >
+                </div>
+                <div>
+                  <div
+                    class="font-headline-xl text-headline-xl font-extrabold text-on-surface"
+                  >
+                    100%
+                  </div>
+                  <div
+                    class="font-label-sm text-label-sm text-on-surface-variant"
+                  >
+                    Técnicos Certificados
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!-- BRANDS SECTION (HIGH-CONTRAST AUTHORIZATION RIBBON) -->
+        <section
+          class="w-full bg-surface-container-low py-space-xl"
+          id="marcas-atendidas"
+        >
+          <div class="max-w-7xl mx-auto px-margin">
+            <div
+              class="flex flex-col md:flex-row md:items-end justify-between mb-space-lg gap-space-md"
+            >
+              <div>
+                <span
+                  class="font-label-sm text-label-sm text-primary uppercase tracking-wider"
+                  >Multi-Marcas Autorizadas</span
+                >
+                <h2
+                  class="font-headline-xl text-headline-xl text-on-surface mt-1"
+                >
+                  Trabalhamos com as Principais Marcas do Mercado
+                </h2>
+              </div>
+              <p
+                class="font-body-md text-body-md text-on-surface-variant max-w-md"
+              >
+                Peças 100% genuínas com calibração digital precisa segundo o
+                manual de cada montadora.
+              </p>
+            </div>
+            <!-- High Contrast Authentic White Strip mimicking authentic brand card -->
+            <div
+              class="bg-surface-container-lowest p-space-lg rounded-2xl shadow-xl flex flex-col gap-space-md"
+            >
+              <div
+                class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-space-md items-center"
+              >
+                <div
+                  class="p-space-md rounded-xl bg-surface-container flex flex-col items-center justify-center text-center group hover:bg-surface-container-high transition-colors"
+                >
+                  <span
+                    class="font-headline-md text-headline-md font-bold tracking-tight text-on-surface group-hover:text-primary-container transition-colors"
+                    >LORENZETTI</span
+                  >
+                  <span
+                    class="font-label-sm text-label-sm text-on-surface-variant mt-1"
+                    >Digital &amp; Mecânico</span
+                  >
+                </div>
+                <div
+                  class="p-space-md rounded-xl bg-surface-container flex flex-col items-center justify-center text-center group hover:bg-surface-container-high transition-colors"
+                >
+                  <span
+                    class="font-headline-md text-headline-md font-bold tracking-tight text-on-surface group-hover:text-primary-container transition-colors"
+                    >BOSCH</span
+                  >
+                  <span
+                    class="font-label-sm text-label-sm text-on-surface-variant mt-1"
+                    >Termotecnologia</span
+                  >
+                </div>
+                <div
+                  class="p-space-md rounded-xl bg-surface-container flex flex-col items-center justify-center text-center group hover:bg-surface-container-high transition-colors"
+                >
+                  <span
+                    class="font-headline-md text-headline-md font-bold tracking-tight text-on-surface group-hover:text-primary-container transition-colors"
+                    >RHEEM</span
+                  >
+                  <span
+                    class="font-label-sm text-label-sm text-on-surface-variant mt-1"
+                    >Alta Eficiência</span
+                  >
+                </div>
+                <div
+                  class="p-space-md rounded-xl bg-surface-container flex flex-col items-center justify-center text-center group hover:bg-surface-container-high transition-colors"
+                >
+                  <span
+                    class="font-headline-md text-headline-md font-bold tracking-tight text-on-surface group-hover:text-primary-container transition-colors"
+                    >RINNAI</span
+                  >
+                  <span
+                    class="font-label-sm text-label-sm text-on-surface-variant mt-1"
+                    >Sistemas Digitais</span
+                  >
+                </div>
+                <div
+                  class="p-space-md rounded-xl bg-surface-container flex flex-col items-center justify-center text-center group hover:bg-surface-container-high transition-colors"
+                >
+                  <span
+                    class="font-headline-md text-headline-md font-bold tracking-tight text-on-surface group-hover:text-primary-container transition-colors"
+                    >KOMECO</span
+                  >
+                  <span
+                    class="font-label-sm text-label-sm text-on-surface-variant mt-1"
+                    >Linhas Prime &amp; Slim</span
+                  >
+                </div>
+                <div
+                  class="p-space-md rounded-xl bg-surface-container flex flex-col items-center justify-center text-center group hover:bg-surface-container-high transition-colors"
+                >
+                  <span
+                    class="font-headline-md text-headline-md font-bold tracking-tight text-on-surface group-hover:text-primary-container transition-colors"
+                    >CUMULUS</span
+                  >
+                  <span
+                    class="font-label-sm text-label-sm text-on-surface-variant mt-1"
+                    >&amp; Harman / Yume</span
+                  >
+                </div>
+              </div>
+              <!-- Micro Banner below brands -->
+              <div
+                class="bg-surface-container-high p-space-sm rounded-xl flex flex-col sm:flex-row items-center justify-between gap-space-sm text-center sm:text-left"
+              >
+                <div
+                  class="flex items-center gap-space-xs text-secondary font-label-md text-label-md"
+                >
+                  <span class="material-symbols-outlined text-[20px]"
+                    >inventory_2</span
+                  >
+                  <span class=""
+                    >Estoque próprio de peças originais para pronta troca no
+                    mesmo dia</span
+                  >
+                </div>
+                <a
+                  class="font-label-sm text-label-sm text-primary hover:underline flex items-center gap-1"
+                  href="https://wa.me/5511985633946?text=Ol%C3%A1%2C%20tenho%20um%20aquecedor%20e%20preciso%20de%20pe%C3%A7as%20ou%20manuten%C3%A7%C3%A3o"
+                  rel="noopener noreferrer"
+                  target="_blank"
+                >
+                  <span class="">Consultar disponibilidade da sua marca</span>
+                  <span class="material-symbols-outlined text-[14px]"
+                    >arrow_forward</span
+                  >
+                </a>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!-- DETAILED SERVICES BENTO GRID -->
+        <section class="w-full bg-surface py-space-2xl" id="servicos">
+          <div class="max-w-7xl mx-auto px-margin">
+            <div class="max-w-3xl mb-space-2xl">
+              <span
+                class="font-label-sm text-label-sm text-primary-container uppercase tracking-widest"
+                >Procedimentos Técnicos Normatizados</span
+              >
+              <h2
+                class="font-headline-xl text-headline-xl text-on-surface mt-space-xs"
+              >
+                Engenharia e Manutenção com Padrão de Fábrica
+              </h2>
+              <p
+                class="font-body-md text-body-md text-on-surface-variant mt-space-sm"
+              >
+                Todos os procedimentos seguem rigorosamente os parâmetros de
+                segurança da ABNT NBR 13103 e recomendações dos fabricantes,
+                assegurando combustão limpa e zero emissão de monóxido nocivo.
+              </p>
+            </div>
+            <div
+              class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-space-lg"
+            >
+              <!-- Card 1: Manutenção Preventiva -->
+              <div
+                class="bg-surface-container-low p-space-lg rounded-2xl flex flex-col justify-between shadow-lg hover:shadow-2xl transition-all group"
+              >
+                <div>
+                  <div
+                    class="w-14 h-14 rounded-xl bg-surface-container-high flex items-center justify-center text-primary mb-space-md group-hover:bg-primary-container group-hover:text-on-primary-container transition-colors"
+                  >
+                    <span class="material-symbols-outlined text-[32px]"
+                      >sanitizer</span
+                    >
+                  </div>
+                  <h3
+                    class="font-headline-md text-headline-md text-on-surface font-bold mb-space-xs"
+                  >
+                    Manutenção Preventiva
+                  </h3>
+                  <p
+                    class="font-body-sm text-body-sm text-on-surface-variant mb-space-md"
+                  >
+                    A manutenção periódica evita acidentes e pode gerar até 30%
+                    de economia no consumo mensal de gás.
+                  </p>
+                  <ul
+                    class="space-y-space-xs font-body-sm text-body-sm text-on-surface-variant mb-space-lg"
+                  >
+                    <li class="flex items-center gap-space-xs">
+                      <span
+                        class="material-symbols-outlined text-secondary text-[16px]"
+                        >check</span
+                      >
+                      <span class="">Limpeza química de queimadores</span>
+                    </li>
+                    <li class="flex items-center gap-space-xs">
+                      <span
+                        class="material-symbols-outlined text-secondary text-[16px]"
+                        >check</span
+                      >
+                      <span class="">Regulagem precisa da chama piloto</span>
+                    </li>
+                    <li class="flex items-center gap-space-xs">
+                      <span
+                        class="material-symbols-outlined text-secondary text-[16px]"
+                        >check</span
+                      >
+                      <span class="">Teste eletrônico de estanqueidade</span>
+                    </li>
+                    <li class="flex items-center gap-space-xs">
+                      <span
+                        class="material-symbols-outlined text-secondary text-[16px]"
+                        >check</span
+                      >
+                      <span class="">Verificação de diafragmas e sensores</span>
+                    </li>
+                  </ul>
+                </div>
+                <a
+                  class="w-full py-2.5 rounded-lg bg-surface-container-high text-on-surface text-center font-label-md text-label-md group-hover:bg-primary-container group-hover:text-on-primary-container transition-all"
+                  href="https://wa.me/5511985633946?text=Ol%C3%A1%2C%20quero%20agendar%20uma%20Manuten%C3%A7%C3%A3o%20Preventiva%20para%20meu%20aquecedor"
+                  rel="noopener noreferrer"
+                  target="_blank"
+                >
+                  Agendar Preventiva
+                </a>
+              </div>
+              <!-- Card 2: Reparo de Urgência -->
+              <div
+                class="bg-surface-container-low p-space-lg rounded-2xl flex flex-col justify-between shadow-lg hover:shadow-2xl transition-all group"
+              >
+                <div>
+                  <div
+                    class="w-14 h-14 rounded-xl bg-surface-container-high flex items-center justify-center text-primary-container mb-space-md group-hover:bg-primary-container group-hover:text-on-primary-container transition-colors"
+                  >
+                    <span class="material-symbols-outlined text-[32px]"
+                      >warning</span
+                    >
+                  </div>
+                  <h3
+                    class="font-headline-md text-headline-md text-on-surface font-bold mb-space-xs"
+                  >
+                    Reparo de Urgência
+                  </h3>
+                  <p
+                    class="font-body-sm text-body-sm text-on-surface-variant mb-space-md"
+                  >
+                    Atendimento prioritário para conter vazamentos e reativar o
+                    aquecimento de água com segurança.
+                  </p>
+                  <ul
+                    class="space-y-space-xs font-body-sm text-body-sm text-on-surface-variant mb-space-lg"
+                  >
+                    <li class="flex items-center gap-space-xs">
+                      <span
+                        class="material-symbols-outlined text-secondary text-[16px]"
+                        >check</span
+                      >
+                      <span class="">Aquecedor desarmando no banho</span>
+                    </li>
+                    <li class="flex items-center gap-space-xs">
+                      <span
+                        class="material-symbols-outlined text-secondary text-[16px]"
+                        >check</span
+                      >
+                      <span class="">Correção de vazamento de gás/água</span>
+                    </li>
+                    <li class="flex items-center gap-space-xs">
+                      <span
+                        class="material-symbols-outlined text-secondary text-[16px]"
+                        >check</span
+                      >
+                      <span class=""
+                        >Resolução de códigos de erro no visor</span
+                      >
+                    </li>
+                    <li class="flex items-center gap-space-xs">
+                      <span
+                        class="material-symbols-outlined text-secondary text-[16px]"
+                        >check</span
+                      >
+                      <span class="">Reparo de micro-explosões e ignição</span>
+                    </li>
+                  </ul>
+                </div>
+                <a
+                  class="w-full py-2.5 rounded-lg bg-surface-container-high text-on-surface text-center font-label-md text-label-md group-hover:bg-primary-container group-hover:text-on-primary-container transition-all"
+                  href="https://wa.me/5511985633946?text=URGENTE%3A%20Meu%20aquecedor%20apresentou%20falha%20e%20preciso%20de%20socorro%20t%C3%A9cnico"
+                  rel="noopener noreferrer"
+                  target="_blank"
+                >
+                  Chamar Técnico de Plantão
+                </a>
+              </div>
+              <!-- Card 3: Instalação Padrão COMGÁS -->
+              <div
+                class="bg-surface-container-low p-space-lg rounded-2xl flex flex-col justify-between shadow-lg hover:shadow-2xl transition-all group"
+              >
+                <div>
+                  <div
+                    class="w-14 h-14 rounded-xl bg-surface-container-high flex items-center justify-center text-secondary mb-space-md group-hover:bg-secondary-container group-hover:text-on-secondary-container transition-colors"
+                  >
+                    <span class="material-symbols-outlined text-[32px]"
+                      >architecture</span
+                    >
+                  </div>
+                  <h3
+                    class="font-headline-md text-headline-md text-on-surface font-bold mb-space-xs"
+                  >
+                    Instalação COMGÁS
+                  </h3>
+                  <p
+                    class="font-body-sm text-body-sm text-on-surface-variant mb-space-md"
+                  >
+                    Instalação residencial e predial em total conformidade com
+                    as normas ABNT NBR 13103.
+                  </p>
+                  <ul
+                    class="space-y-space-xs font-body-sm text-body-sm text-on-surface-variant mb-space-lg"
+                  >
+                    <li class="flex items-center gap-space-xs">
+                      <span
+                        class="material-symbols-outlined text-secondary text-[16px]"
+                        >check</span
+                      >
+                      <span class="">Dutos de exaustão em alumínio/inox</span>
+                    </li>
+                    <li class="flex items-center gap-space-xs">
+                      <span
+                        class="material-symbols-outlined text-secondary text-[16px]"
+                        >check</span
+                      >
+                      <span class="">Flexíveis certificados NBR 14177</span>
+                    </li>
+                    <li class="flex items-center gap-space-xs">
+                      <span
+                        class="material-symbols-outlined text-secondary text-[16px]"
+                        >check</span
+                      >
+                      <span class="">Válvulas esféricas de corte rápido</span>
+                    </li>
+                    <li class="flex items-center gap-space-xs">
+                      <span
+                        class="material-symbols-outlined text-secondary text-[16px]"
+                        >check</span
+                      >
+                      <span class="">Dimensionamento de vazão de água</span>
+                    </li>
+                  </ul>
+                </div>
+                <a
+                  class="w-full py-2.5 rounded-lg bg-surface-container-high text-on-surface text-center font-label-md text-label-md group-hover:bg-primary-container group-hover:text-on-primary-container transition-all"
+                  href="https://wa.me/5511985633946?text=Ol%C3%A1%2C%20preciso%20de%20instala%C3%A7%C3%A3o%20padronizada%20para%20aquecedor%20a%20g%C3%A1s"
+                  rel="noopener noreferrer"
+                  target="_blank"
+                >
+                  Solicitar Instalação
+                </a>
+              </div>
+              <!-- Card 4: Conversão de Gás -->
+              <div
+                class="bg-surface-container-low p-space-lg rounded-2xl flex flex-col justify-between shadow-lg hover:shadow-2xl transition-all group"
+              >
+                <div>
+                  <div
+                    class="w-14 h-14 rounded-xl bg-surface-container-high flex items-center justify-center text-primary mb-space-md group-hover:bg-primary-container group-hover:text-on-primary-container transition-colors"
+                  >
+                    <span class="material-symbols-outlined text-[32px]"
+                      >sync_alt</span
+                    >
+                  </div>
+                  <h3
+                    class="font-headline-md text-headline-md text-on-surface font-bold mb-space-xs"
+                  >
+                    Conversão GLP / GN
+                  </h3>
+                  <p
+                    class="font-body-sm text-body-sm text-on-surface-variant mb-space-md"
+                  >
+                    Adaptação técnica segura entre gás encanado natural de rua e
+                    gás liquefeito de petróleo (botijão).
+                  </p>
+                  <ul
+                    class="space-y-space-xs font-body-sm text-body-sm text-on-surface-variant mb-space-lg"
+                  >
+                    <li class="flex items-center gap-space-xs">
+                      <span
+                        class="material-symbols-outlined text-secondary text-[16px]"
+                        >check</span
+                      >
+                      <span class=""
+                        >Substituição de injetores certificados</span
+                      >
+                    </li>
+                    <li class="flex items-center gap-space-xs">
+                      <span
+                        class="material-symbols-outlined text-secondary text-[16px]"
+                        >check</span
+                      >
+                      <span class="">Regulagem do diafragma de pressão</span>
+                    </li>
+                    <li class="flex items-center gap-space-xs">
+                      <span
+                        class="material-symbols-outlined text-secondary text-[16px]"
+                        >check</span
+                      >
+                      <span class="">Laudo técnico com manômetro digital</span>
+                    </li>
+                    <li class="flex items-center gap-space-xs">
+                      <span
+                        class="material-symbols-outlined text-secondary text-[16px]"
+                        >check</span
+                      >
+                      <span class="">Homologação e garantia de segurança</span>
+                    </li>
+                  </ul>
+                </div>
+                <a
+                  class="w-full py-2.5 rounded-lg bg-surface-container-high text-on-surface text-center font-label-md text-label-md group-hover:bg-primary-container group-hover:text-on-primary-container transition-all"
+                  href="https://wa.me/5511985633946?text=Ol%C3%A1%2C%20preciso%20converter%20meu%20aquecedor%20%28GN%2FGLP%29"
+                  rel="noopener noreferrer"
+                  target="_blank"
+                >
+                  Solicitar Conversão
+                </a>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!-- VISUAL ALERT SIGNS SECTION (SAFETY FIRST) -->
+        <section class="w-full bg-surface-container-lowest py-space-2xl">
+          <div class="max-w-7xl mx-auto px-margin">
+            <div
+              class="grid grid-cols-1 lg:grid-cols-12 gap-space-xl items-center"
+            >
+              <!-- Explanatory Box -->
+              <div class="lg:col-span-5 flex flex-col gap-space-md">
+                <div
+                  class="inline-flex items-center gap-space-xs px-space-sm py-1 rounded-md bg-error-container text-on-error-container w-fit"
+                >
+                  <span class="material-symbols-outlined text-[16px]"
+                    >report_problem</span
+                  >
+                  <span class="font-label-sm text-label-sm uppercase font-bold"
+                    >Atenção &amp; Prevenção</span
+                  >
+                </div>
+                <h2
+                  class="font-headline-xl text-headline-xl text-on-surface font-extrabold leading-tight"
+                >
+                  Quando Chamar a JK Aquecedores Imediatamente?
+                </h2>
+                <p class="font-body-md text-body-md text-on-surface-variant">
+                  Aquecedores a gás sem manutenção regular podem gerar
+                  intoxicação por monóxido de carbono e risco de explosão. Fique
+                  atento a estes 5 sinais críticos:
+                </p>
+                <div
+                  class="p-space-md rounded-xl bg-surface-container-high flex items-center gap-space-sm"
+                >
+                  <span
+                    class="material-symbols-outlined text-secondary text-[28px]"
+                    >verified</span
+                  >
+                  <div class="font-body-sm text-body-sm text-on-surface">
+                    A COMGÁS e os fabricantes recomendam revisão técnica
+                    preventiva <strong>a cada 12 meses</strong> para garantir a
+                    segurança da família.
+                  </div>
+                </div>
+              </div>
+              <!-- 5 Visual Warning Cards Grid -->
+              <div
+                class="lg:col-span-7 grid grid-cols-1 sm:grid-cols-2 gap-space-md"
+              >
+                <div
+                  class="p-space-md rounded-xl bg-surface-container-low shadow-md flex items-start gap-space-sm"
+                >
+                  <div
+                    class="p-2.5 rounded-lg bg-surface-container-highest text-primary-container shrink-0"
+                  >
+                    <span class="material-symbols-outlined text-[24px]"
+                      >mode_heat</span
+                    >
+                  </div>
+                  <div>
+                    <h4
+                      class="font-headline-md text-headline-md text-on-surface font-semibold text-[17px]"
+                    >
+                      Chama Amarela ou Vermelha
+                    </h4>
+                    <p
+                      class="font-body-sm text-body-sm text-on-surface-variant mt-1"
+                    >
+                      A chama normal deve ser azul viva. Chama amarela indica
+                      queima incompleta e fuligem tóxica.
+                    </p>
+                  </div>
+                </div>
+                <div
+                  class="p-space-md rounded-xl bg-surface-container-low shadow-md flex items-start gap-space-sm"
+                >
+                  <div
+                    class="p-2.5 rounded-lg bg-surface-container-highest text-primary-container shrink-0"
+                  >
+                    <span class="material-symbols-outlined text-[24px]"
+                      >air</span
+                    >
+                  </div>
+                  <div>
+                    <h4
+                      class="font-headline-md text-headline-md text-on-surface font-semibold text-[17px]"
+                    >
+                      Cheiro de Gás no Local
+                    </h4>
+                    <p
+                      class="font-body-sm text-body-sm text-on-surface-variant mt-1"
+                    >
+                      Indício imediato de vazamento em mangueiras, registros ou
+                      conexões. Desligue e contate o plantão.
+                    </p>
+                  </div>
+                </div>
+                <div
+                  class="p-space-md rounded-xl bg-surface-container-low shadow-md flex items-start gap-space-sm"
+                >
+                  <div
+                    class="p-2.5 rounded-lg bg-surface-container-highest text-primary-container shrink-0"
+                  >
+                    <span class="material-symbols-outlined text-[24px]"
+                      >volume_up</span
+                    >
+                  </div>
+                  <div>
+                    <h4
+                      class="font-headline-md text-headline-md text-on-surface font-semibold text-[17px]"
+                    >
+                      Estalos ou Pequenos Sopros
+                    </h4>
+                    <p
+                      class="font-body-sm text-body-sm text-on-surface-variant mt-1"
+                    >
+                      Ruídos fortes na ignição representam acúmulo de gás antes
+                      da faísca e exigem regulagem urgente.
+                    </p>
+                  </div>
+                </div>
+                <div
+                  class="p-space-md rounded-xl bg-surface-container-low shadow-md flex items-start gap-space-sm"
+                >
+                  <div
+                    class="p-2.5 rounded-lg bg-surface-container-highest text-primary-container shrink-0"
+                  >
+                    <span class="material-symbols-outlined text-[24px]"
+                      >device_thermostat</span
+                    >
+                  </div>
+                  <div>
+                    <h4
+                      class="font-headline-md text-headline-md text-on-surface font-semibold text-[17px]"
+                    >
+                      Água Esfriando no Meio do Banho
+                    </h4>
+                    <p
+                      class="font-body-sm text-body-sm text-on-surface-variant mt-1"
+                    >
+                      Oscilações térmicas indicam sensores obstruídos,
+                      superaquecimento ou pressão insuficiente de água.
+                    </p>
+                  </div>
+                </div>
+                <div
+                  class="p-space-md rounded-xl bg-surface-container-low shadow-md sm:col-span-2 flex items-start gap-space-sm"
+                >
+                  <div
+                    class="p-2.5 rounded-lg bg-surface-container-highest text-primary-container shrink-0"
+                  >
+                    <span class="material-symbols-outlined text-[24px]"
+                      >error</span
+                    >
+                  </div>
+                  <div>
+                    <h4
+                      class="font-headline-md text-headline-md text-on-surface font-semibold text-[17px]"
+                    >
+                      Códigos de Erro no Painel Digital (E1, E2, 11, etc.)
+                    </h4>
+                    <p
+                      class="font-body-sm text-body-sm text-on-surface-variant mt-1"
+                    >
+                      Erros nos aparelhos Rinnai, Bosch e Lorenzetti bloqueiam o
+                      funcionamento como protocolo de proteção contra danos
+                      elétricos ou falta de exaustão.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!-- DIFFERENTIALS (WHY CHOOSE JK) -->
+        <section class="w-full bg-surface py-space-2xl" id="vantagens">
+          <div class="max-w-7xl mx-auto px-margin">
+            <div class="text-center max-w-2xl mx-auto mb-space-2xl">
+              <span
+                class="font-label-sm text-label-sm text-secondary uppercase tracking-widest"
+                >Compromisso &amp; Confiança</span
+              >
+              <h2
+                class="font-headline-xl text-headline-xl text-on-surface mt-1"
+              >
+                Por Que a JK Aquecedores é a Referência em SP?
+              </h2>
+            </div>
+            <div
+              class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-space-lg"
+            >
+              <div
+                class="bg-surface-container-low p-space-lg rounded-2xl shadow-md flex flex-col gap-space-sm"
+              >
+                <div
+                  class="w-12 h-12 rounded-xl bg-surface-container-highest flex items-center justify-center text-secondary"
+                >
+                  <span class="material-symbols-outlined text-[28px]"
+                    >search_insights</span
+                  >
+                </div>
+                <h3
+                  class="font-headline-md text-headline-md text-on-surface font-bold"
+                >
+                  Diagnóstico Honesto
+                </h3>
+                <p class="font-body-sm text-body-sm text-on-surface-variant">
+                  Explicamos com transparência a falha do aparelho. Só trocamos
+                  peças que realmente apresentam desgaste ou falha funcional,
+                  sem surpresas na conta final.
+                </p>
+              </div>
+              <div
+                class="bg-surface-container-low p-space-lg rounded-2xl shadow-md flex flex-col gap-space-sm"
+              >
+                <div
+                  class="w-12 h-12 rounded-xl bg-surface-container-highest flex items-center justify-center text-primary-container"
+                >
+                  <span class="material-symbols-outlined text-[28px]"
+                    >contract_edit</span
+                  >
+                </div>
+                <h3
+                  class="font-headline-md text-headline-md text-on-surface font-bold"
+                >
+                  Garantia Formal por Escrito
+                </h3>
+                <p class="font-body-sm text-body-sm text-on-surface-variant">
+                  Todos os consertos, limpezas e componentes substituídos
+                  recebem certificado de garantia física e digital com rastreio
+                  da ordem de serviço.
+                </p>
+              </div>
+              <div
+                class="bg-surface-container-low p-space-lg rounded-2xl shadow-md flex flex-col gap-space-sm"
+              >
+                <div
+                  class="w-12 h-12 rounded-xl bg-surface-container-highest flex items-center justify-center text-secondary"
+                >
+                  <span class="material-symbols-outlined text-[28px]"
+                    >precision_manufacturing</span
+                  >
+                </div>
+                <h3
+                  class="font-headline-md text-headline-md text-on-surface font-bold"
+                >
+                  Ferramentas de Precisão
+                </h3>
+                <p class="font-body-sm text-body-sm text-on-surface-variant">
+                  Nossos técnicos utilizam manômetros digitais, detectores
+                  eletrônicos de gás sniffer e multímetros calibrados para
+                  testes infalíveis.
+                </p>
+              </div>
+              <div
+                class="bg-surface-container-low p-space-lg rounded-2xl shadow-md flex flex-col gap-space-sm"
+              >
+                <div
+                  class="w-12 h-12 rounded-xl bg-surface-container-highest flex items-center justify-center text-primary-container"
+                >
+                  <span class="material-symbols-outlined text-[28px]"
+                    >badge</span
+                  >
+                </div>
+                <h3
+                  class="font-headline-md text-headline-md text-on-surface font-bold"
+                >
+                  Técnico Uniformizado &amp; Pontual
+                </h3>
+                <p class="font-body-sm text-body-sm text-on-surface-variant">
+                  Equipe com identificação completa, agendamento de horário fixo
+                  (sem janelas vagas) e total respeito às regras de condomínios
+                  residenciais.
+                </p>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!-- REAL TESTIMONIALS SECTION -->
+        <section
+          class="w-full bg-surface-container-lowest py-space-2xl"
+          id="depoimentos"
+        >
+          <div class="max-w-7xl mx-auto px-margin">
+            <div
+              class="flex flex-col md:flex-row md:items-end justify-between mb-space-2xl gap-space-md"
+            >
+              <div>
+                <div
+                  class="flex items-center gap-space-xs text-secondary font-label-sm text-label-sm mb-1"
+                >
+                  <span class="material-symbols-outlined text-[18px]"
+                    >star</span
+                  >
+                  <span class=""
+                    >Avaliações Verificadas no Google &amp; Instagram</span
+                  >
+                </div>
+                <h2
+                  class="font-headline-xl text-headline-xl text-on-surface font-extrabold"
+                >
+                  O Que Nossos Clientes Dizem
+                </h2>
+              </div>
+              <div
+                class="flex items-center gap-space-xs bg-surface-container-high px-space-md py-2 rounded-xl text-on-surface font-label-md text-label-md shadow"
+              >
+                <span
+                  class="material-symbols-outlined text-secondary text-[20px]"
+                  >thumb_up</span
+                >
+                <span class=""
+                  >4.9 / 5.0 estrelas (+180 avaliações de residências)</span
+                >
+              </div>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-space-lg">
+              <!-- Review 1 -->
+              <div
+                class="bg-surface-container-low p-space-lg rounded-2xl shadow-md flex flex-col justify-between"
+              >
+                <div>
+                  <div
+                    class="flex items-center gap-1 text-secondary mb-space-sm"
+                  >
+                    <span class="material-symbols-outlined text-[18px]"
+                      >star</span
+                    >
+                    <span class="material-symbols-outlined text-[18px]"
+                      >star</span
+                    >
+                    <span class="material-symbols-outlined text-[18px]"
+                      >star</span
+                    >
+                    <span class="material-symbols-outlined text-[18px]"
+                      >star</span
+                    >
+                    <span class="material-symbols-outlined text-[18px]"
+                      >star</span
+                    >
+                  </div>
+                  <p
+                    class="font-body-sm text-body-sm text-on-surface-variant mb-space-lg leading-relaxed"
+                  >
+                    “O Alexsander foi um verdadeiro salva-vidas. Meu aquecedor
+                    Rinnai começou a dar erro no meio de uma noite fria. Ele
+                    compareceu pontualmente, diagnosticou o sensor com defeito e
+                    trocou por uma peça nova na hora. Serviço limpo e
+                    impecável.”
+                  </p>
+                </div>
+                <div
+                  class="flex items-center gap-space-sm pt-space-sm border-t border-surface-container-high"
+                >
+                  <div
+                    class="w-10 h-10 rounded-full bg-surface-container-highest flex items-center justify-center font-bold text-primary"
+                  >
+                    RC
+                  </div>
+                  <div>
+                    <div
+                      class="font-headline-md text-headline-md text-[15px] font-bold text-on-surface"
+                    >
+                      Rodrigo Camargo
+                    </div>
+                    <div
+                      class="font-body-sm text-body-sm text-[12px] text-on-surface-variant"
+                    >
+                      Apartamento em Moema, SP
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- Review 2 -->
+              <div
+                class="bg-surface-container-low p-space-lg rounded-2xl shadow-md flex flex-col justify-between"
+              >
+                <div>
+                  <div
+                    class="flex items-center gap-1 text-secondary mb-space-sm"
+                  >
+                    <span class="material-symbols-outlined text-[18px]"
+                      >star</span
+                    >
+                    <span class="material-symbols-outlined text-[18px]"
+                      >star</span
+                    >
+                    <span class="material-symbols-outlined text-[18px]"
+                      >star</span
+                    >
+                    <span class="material-symbols-outlined text-[18px]"
+                      >star</span
+                    >
+                    <span class="material-symbols-outlined text-[18px]"
+                      >star</span
+                    >
+                  </div>
+                  <p
+                    class="font-body-sm text-body-sm text-on-surface-variant mb-space-lg leading-relaxed"
+                  >
+                    “Fizemos a revisão preventiva anual do nosso Lorenzetti
+                    digital com a JK. Desmontaram, limparam tudo e regularam o
+                    queimador. Nosso consumo de gás caiu perceptivelmente no mês
+                    seguinte. Profissionais educados e muito organizados.”
+                  </p>
+                </div>
+                <div
+                  class="flex items-center gap-space-sm pt-space-sm border-t border-surface-container-high"
+                >
+                  <div
+                    class="w-10 h-10 rounded-full bg-surface-container-highest flex items-center justify-center font-bold text-primary"
+                  >
+                    MS
+                  </div>
+                  <div>
+                    <div
+                      class="font-headline-md text-headline-md text-[15px] font-bold text-on-surface"
+                    >
+                      Mariana Silveira
+                    </div>
+                    <div
+                      class="font-body-sm text-body-sm text-[12px] text-on-surface-variant"
+                    >
+                      Condomínio em Santo André, ABC
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- Review 3 -->
+              <div
+                class="bg-surface-container-low p-space-lg rounded-2xl shadow-md flex flex-col justify-between"
+              >
+                <div>
+                  <div
+                    class="flex items-center gap-1 text-secondary mb-space-sm"
+                  >
+                    <span class="material-symbols-outlined text-[18px]"
+                      >star</span
+                    >
+                    <span class="material-symbols-outlined text-[18px]"
+                      >star</span
+                    >
+                    <span class="material-symbols-outlined text-[18px]"
+                      >star</span
+                    >
+                    <span class="material-symbols-outlined text-[18px]"
+                      >star</span
+                    >
+                    <span class="material-symbols-outlined text-[18px]"
+                      >star</span
+                    >
+                  </div>
+                  <p
+                    class="font-body-sm text-body-sm text-on-surface-variant mb-space-lg leading-relaxed"
+                  >
+                    “Contratei para a conversão de botijão para gás de rua
+                    encanado Comgás. Fizeram o teste de pressão na minha frente
+                    com o manômetro, me deram todas as orientações de segurança
+                    e o certificado. Recomendo de olhos fechados.”
+                  </p>
+                </div>
+                <div
+                  class="flex items-center gap-space-sm pt-space-sm border-t border-surface-container-high"
+                >
+                  <div
+                    class="w-10 h-10 rounded-full bg-surface-container-highest flex items-center justify-center font-bold text-primary"
+                  >
+                    FT
+                  </div>
+                  <div>
+                    <div
+                      class="font-headline-md text-headline-md text-[15px] font-bold text-on-surface"
+                    >
+                      Fernando T. Alcantara
+                    </div>
+                    <div
+                      class="font-body-sm text-body-sm text-[12px] text-on-surface-variant"
+                    >
+                      Granja Viana, Cotia / SP
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!-- FAST QUOTE FORM & APPOINTMENT CALCULATOR -->
+        <section class="w-full bg-surface py-space-2xl" id="contato">
+          <div class="max-w-7xl mx-auto px-margin">
+            <div
+              class="grid grid-cols-1 lg:grid-cols-12 gap-space-xl items-center"
+            >
+              <!-- Left: Quick Dispatch Perks -->
+              <div class="lg:col-span-6 flex flex-col gap-space-lg">
+                <span
+                  class="font-label-sm text-label-sm text-primary uppercase tracking-widest"
+                  >Atendimento Express</span
+                >
+                <h2
+                  class="font-headline-xl text-headline-xl text-on-surface font-extrabold leading-tight"
+                >
+                  Solicite um Orçamento Rápido sem Compromisso
+                </h2>
+                <p class="font-body-md text-body-md text-on-surface-variant">
+                  Preencha os dados do seu aparelho e o técnico Alexsander
+                  entrará em contato em menos de 10 minutos pelo WhatsApp com o
+                  diagnóstico prévio e disponibilidade de visita técnica.
+                </p>
+                <div class="space-y-space-md">
+                  <div
+                    class="flex items-center gap-space-sm p-space-md rounded-xl bg-surface-container-low shadow-sm"
+                  >
+                    <span
+                      class="material-symbols-outlined text-secondary text-[24px]"
+                      >timer</span
+                    >
+                    <div>
+                      <div class="font-label-lg text-label-lg text-on-surface">
+                        Resposta Instantânea
+                      </div>
+                      <div
+                        class="font-body-sm text-body-sm text-on-surface-variant"
+                      >
+                        Orçamentos claros direto no WhatsApp
+                      </div>
+                    </div>
+                  </div>
+                  <div
+                    class="flex items-center gap-space-sm p-space-md rounded-xl bg-surface-container-low shadow-sm"
+                  >
+                    <span
+                      class="material-symbols-outlined text-primary-container text-[24px]"
+                      >location_on</span
+                    >
+                    <div>
+                      <div class="font-label-lg text-label-lg text-on-surface">
+                        Cobertura Total em SP
+                      </div>
+                      <div
+                        class="font-body-sm text-body-sm text-on-surface-variant"
+                      >
+                        Capital (Zona Sul, Oeste, Norte, Leste), ABC, Alphaville
+                        e Região
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- Direct Phone Badges -->
+                <div
+                  class="p-space-md rounded-xl bg-surface-container-high flex flex-col sm:flex-row items-center justify-between gap-space-sm"
+                >
+                  <div
+                    class="flex items-center gap-space-xs text-on-surface font-label-md text-label-md"
+                  >
+                    <span class="material-symbols-outlined text-secondary"
+                      >phone</span
+                    >
+                    <span class="">Prefere falar por telefone?</span>
+                  </div>
+                  <div class="flex gap-space-sm">
+                    <a
+                      class="px-space-md py-1.5 rounded-lg bg-surface text-on-surface font-label-sm text-label-sm hover:text-secondary shadow transition-colors"
+                      href="tel:11985633946"
+                    >
+                      (11) 98563-3946
+                    </a>
+                    <a
+                      class="px-space-md py-1.5 rounded-lg bg-surface text-on-surface font-label-sm text-label-sm hover:text-secondary shadow transition-colors"
+                      href="tel:11997371408"
+                    >
+                      (11) 99737-1408
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <!-- Right: Fast interactive Form -->
+              <div class="lg:col-span-6">
+                <div
+                  class="p-space-xl rounded-2xl bg-surface-container-low shadow-2xl"
+                >
+                  <h3
+                    class="font-headline-md text-headline-md text-on-surface font-bold mb-space-xs"
+                  >
+                    Simulador de Atendimento
+                  </h3>
+                  <p
+                    class="font-body-sm text-body-sm text-on-surface-variant mb-space-lg"
+                  >
+                    Selecione o serviço e os detalhes para envio direto ao
+                    técnico:
+                  </p>
+                  <form
+                    class="flex flex-col gap-space-md"
+                    id="jkQuoteForm"
+                    onsubmit="handleFormSubmit(event)"
+                  >
+                    <div>
+                      <label
+                        class="block font-label-sm text-label-sm text-on-surface-variant uppercase mb-1"
+                        >Qual serviço você precisa?</label
+                      >
+                      <select
+                        class="w-full px-space-md py-3 rounded-lg bg-surface-container-lowest text-on-surface font-body-md text-body-md focus:outline-none focus:ring-1 focus:ring-primary-container shadow-inner"
+                        id="formServico"
+                      >
+                        <option value="Manutenção Preventiva Completa">
+                          Manutenção Preventiva Completa (Revisão Anual)
+                        </option>
+                        <option value="Conserto / Reparo Emergencial">
+                          Conserto / Reparo Urgente (Não liga / Apagando)
+                        </option>
+                        <option value="Vazamento de Gás ou Água">
+                          Correção de Vazamento de Gás ou Água
+                        </option>
+                        <option value="Instalação de Novo Aquecedor">
+                          Instalação de Novo Aquecedor Padrão Comgás
+                        </option>
+                        <option value="Conversão de Gás (GN/GLP)">
+                          Conversão de Gás (GLP para GN ou vice-versa)
+                        </option>
+                      </select>
+                    </div>
+                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-space-md">
+                      <div>
+                        <label
+                          class="block font-label-sm text-label-sm text-on-surface-variant uppercase mb-1"
+                          >Marca do Aparelho</label
+                        >
+                        <select
+                          class="w-full px-space-md py-3 rounded-lg bg-surface-container-lowest text-on-surface font-body-md text-body-md focus:outline-none focus:ring-1 focus:ring-primary-container shadow-inner"
+                          id="formMarca"
+                        >
+                          <option value="Lorenzetti">Lorenzetti</option>
+                          <option value="Rinnai">Rinnai</option>
+                          <option value="Bosch">Bosch</option>
+                          <option value="Rheem">Rheem</option>
+                          <option value="Komeco">Komeco</option>
+                          <option value="Outra / Não sei">
+                            Outra Marca / Não sei
+                          </option>
+                        </select>
+                      </div>
+                      <div>
+                        <label
+                          class="block font-label-sm text-label-sm text-on-surface-variant uppercase mb-1"
+                          >Bairro / Cidade</label
+                        >
+                        <input
+                          class="w-full px-space-md py-3 rounded-lg bg-surface-container-lowest text-on-surface font-body-md text-body-md focus:outline-none focus:ring-1 focus:ring-primary-container shadow-inner"
+                          id="formLocal"
+                          placeholder="Ex: Moema, São Paulo"
+                          required=""
+                          type="text"
+                        />
+                      </div>
+                    </div>
+                    <div>
+                      <label
+                        class="block font-label-sm text-label-sm text-on-surface-variant uppercase mb-1"
+                        >Seu Nome</label
+                      >
+                      <input
+                        class="w-full px-space-md py-3 rounded-lg bg-surface-container-lowest text-on-surface font-body-md text-body-md focus:outline-none focus:ring-1 focus:ring-primary-container shadow-inner"
+                        id="formNome"
+                        placeholder="Seu nome completo"
+                        required=""
+                        type="text"
+                      />
+                    </div>
+                    <div>
+                      <label
+                        class="block font-label-sm text-label-sm text-on-surface-variant uppercase mb-1"
+                        >Seu WhatsApp</label
+                      >
+                      <input
+                        class="w-full px-space-md py-3 rounded-lg bg-surface-container-lowest text-on-surface font-body-md text-body-md focus:outline-none focus:ring-1 focus:ring-primary-container shadow-inner"
+                        id="formTelefone"
+                        placeholder="(11) 90000-0000"
+                        required=""
+                        type="tel"
+                      />
+                    </div>
+                    <button
+                      class="w-full py-4 mt-space-xs rounded-xl bg-secondary-container text-on-secondary-container font-label-lg text-label-lg flex items-center justify-center gap-space-xs shadow-xl hover:bg-secondary hover:text-on-secondary transition-all"
+                      type="submit"
+                    >
+                      <span class="material-symbols-outlined text-[20px]"
+                        >send</span
+                      >
+                      <span class="">Enviar Dados e Chamar no WhatsApp</span>
+                    </button>
+                    <span
+                      class="font-label-sm text-label-sm text-on-surface-variant text-center"
+                    >
+                      🔒 Seus dados são protegidos e utilizados exclusivamente
+                      para o envio do orçamento técnico.
+                    </span>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!-- FAQ ACCORDION SECTION -->
+        <section
+          class="w-full bg-surface-container-lowest py-space-2xl"
+          id="faq"
+        >
+          <div class="max-w-4xl mx-auto px-margin">
+            <div class="text-center mb-space-2xl">
+              <span
+                class="font-label-sm text-label-sm text-primary uppercase tracking-widest"
+                >Dúvidas Frequentes</span
+              >
+              <h2
+                class="font-headline-xl text-headline-xl text-on-surface font-extrabold mt-1"
+              >
+                Perguntas Comuns sobre Aquecedores a Gás
+              </h2>
+            </div>
+            <div class="space-y-space-md">
+              <details
+                class="group bg-surface-container-low rounded-xl p-space-md shadow cursor-pointer"
+              >
+                <summary
+                  class="font-headline-md text-headline-md text-[18px] text-on-surface font-semibold flex items-center justify-between list-none"
+                >
+                  <span class=""
+                    >De quanto em quanto tempo devo fazer a manutenção
+                    preventiva?</span
+                  >
+                  <span
+                    class="material-symbols-outlined text-on-surface-variant group-open:rotate-180 transition-transform"
+                    >expand_more</span
+                  >
+                </summary>
+                <div
+                  class="font-body-md text-body-md text-on-surface-variant mt-space-sm pt-space-xs"
+                >
+                  A recomendação da norma técnica ABNT NBR 13103 e de
+                  fabricantes como Rinnai e Lorenzetti é que o aquecedor a gás
+                  receba manutenção preventiva pelo menos uma vez a cada 12
+                  meses em residências, ou a cada 6 meses em ambientes
+                  comerciais de uso contínuo (pousadas, academias, salões).
+                </div>
+              </details>
+              <details
+                class="group bg-surface-container-low rounded-xl p-space-md shadow cursor-pointer"
+              >
+                <summary
+                  class="font-headline-md text-headline-md text-[18px] text-on-surface font-semibold flex items-center justify-between list-none"
+                >
+                  <span class=""
+                    >Por que o aquecedor apaga sozinho quando abro a água fria
+                    para misturar?</span
+                  >
+                  <span
+                    class="material-symbols-outlined text-on-surface-variant group-open:rotate-180 transition-transform"
+                    >expand_more</span
+                  >
+                </summary>
+                <div
+                  class="font-body-md text-body-md text-on-surface-variant mt-space-sm pt-space-xs"
+                >
+                  Isso ocorre porque, ao abrir o registro de água fria, a
+                  pressão no circuito de água quente cai abruptamente. Quando o
+                  fluxo de água pelo aquecedor fica abaixo do limite mínimo do
+                  fluxostato/sensor de fluxo, o aparelho desliga os queimadores
+                  por proteção. Isso é facilmente resolvido com regulagem
+                  técnica ou pressurização.
+                </div>
+              </details>
+              <details
+                class="group bg-surface-container-low rounded-xl p-space-md shadow cursor-pointer"
+              >
+                <summary
+                  class="font-headline-md text-headline-md text-[18px] text-on-surface font-semibold flex items-center justify-between list-none"
+                >
+                  <span class=""
+                    >Vocês fornecem nota fiscal e garantia para
+                    condomínios?</span
+                  >
+                  <span
+                    class="material-symbols-outlined text-on-surface-variant group-open:rotate-180 transition-transform"
+                    >expand_more</span
+                  >
+                </summary>
+                <div
+                  class="font-body-md text-body-md text-on-surface-variant mt-space-sm pt-space-xs"
+                >
+                  Sim! A JK Aquecedores atende pessoas físicas, condomínios e
+                  estabelecimentos comerciais emitindo Ordem de Serviço
+                  detalhada com laudo técnico e garantia por escrito de 90 dias
+                  para todas as peças substituídas e serviços executados.
+                </div>
+              </details>
+              <details
+                class="group bg-surface-container-low rounded-xl p-space-md shadow cursor-pointer"
+              >
+                <summary
+                  class="font-headline-md text-headline-md text-[18px] text-on-surface font-semibold flex items-center justify-between list-none"
+                >
+                  <span class=""
+                    >Qual a forma de pagamento aceita no atendimento a
+                    domicílio?</span
+                  >
+                  <span
+                    class="material-symbols-outlined text-on-surface-variant group-open:rotate-180 transition-transform"
+                    >expand_more</span
+                  >
+                </summary>
+                <div
+                  class="font-body-md text-body-md text-on-surface-variant mt-space-sm pt-space-xs"
+                >
+                  Nossos técnicos portam máquinas de cartão modernas. Aceitamos
+                  PIX, cartões de crédito em até 12x (consulte condições),
+                  débito e transferência bancária direta ao término da aprovação
+                  dos testes de água quente.
+                </div>
+              </details>
+            </div>
+          </div>
+        </section>
+        <!-- FINAL URGENT CALL TO ACTION BANNER -->
+        <section
+          class="w-full bg-surface-container-high py-space-xl relative overflow-hidden"
+        >
+          <div
+            class="absolute -right-20 -bottom-20 w-80 h-80 rounded-full bg-primary-container/15 blur-3xl pointer-events-none"
+          ></div>
+          <div
+            class="max-w-7xl mx-auto px-margin relative z-10 flex flex-col md:flex-row items-center justify-between gap-space-lg"
+          >
+            <div class="flex flex-col gap-space-xs text-center md:text-left">
+              <h3
+                class="font-headline-xl text-headline-xl text-on-surface font-extrabold"
+              >
+                Não fique sem água quente hoje.
+              </h3>
+              <p
+                class="font-body-md text-body-md text-on-surface-variant max-w-xl"
+              >
+                Fale diretamente com o técnico responsável Alexsander Alberto e
+                garanta atendimento prioritário para seu aquecedor a gás em São
+                Paulo e região.
+              </p>
+            </div>
+            <div
+              class="flex flex-col sm:flex-row items-center gap-space-md shrink-0"
+            >
+              <a
+                class="px-space-xl py-3.5 rounded-xl bg-secondary-container text-on-secondary-container font-label-lg text-label-lg flex items-center gap-space-xs shadow-lg hover:bg-secondary hover:text-on-secondary transition-all"
+                href="https://wa.me/5511985633946?text=Ol%C3%A1%2C%20preciso%20de%20atendimento%20urgente%20para%20meu%20aquecedor"
+                rel="noopener noreferrer"
+                target="_blank"
+              >
+                <svg class="wa-icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false" style="width: 18px; height: 18px;">
+                  <path fill="currentColor" d="M12.04 2C6.58 2 2.15 6.36 2.15 11.8c0 2.09.68 4.1 1.85 5.75L2 22l4.64-1.94A9.76 9.76 0 0 0 12.04 21c5.46 0 9.9-4.36 9.9-9.8S17.5 2 12.04 2Zm0 17.9a7.98 7.98 0 0 1-4.08-1.13l-.29-.17-2.75 1.15 1.13-2.68-.18-.28A8.08 8.08 0 1 1 12.04 19.9Zm4.42-6.02c-.24-.12-1.44-.71-1.66-.79-.22-.08-.38-.12-.54.12-.16.24-.62.79-.76.95-.14.16-.28.18-.52.06-.24-.12-1.02-.38-1.94-1.2-.72-.64-1.2-1.43-1.34-1.67-.14-.24-.02-.37.1-.49.1-.1.24-.28.36-.42.12-.14.16-.24.24-.4.08-.16.04-.3-.02-.42-.06-.12-.54-1.3-.74-1.78-.2-.48-.4-.42-.54-.43h-.46c-.16 0-.42.06-.64.3-.22.24-.84.82-.84 2s.86 2.31.98 2.47c.12.16 1.67 2.56 4.05 3.58.57.25 1.02.4 1.37.51.57.18 1.09.15 1.5.09.46-.07 1.44-.59 1.64-1.16.21-.57.21-1.06.15-1.16-.06-.1-.22-.16-.46-.28Z"/>
+                </svg>
+                <span class="">(11) 98563-3946 WhatsApp</span>
+              </a>
+              <a
+                class="px-space-lg py-3.5 rounded-xl bg-surface-container text-on-surface font-label-lg text-label-lg flex items-center gap-space-xs shadow hover:bg-surface-container-highest transition-all"
+                href="tel:11997371408"
+              >
+                <span class="material-symbols-outlined text-[20px]">call</span>
+                <span class="">(11) 99737-1408</span>
+              </a>
+            </div>
+          </div>
+        </section>
+        <!-- FLOATING QUICK WHATSAPP DOCK (BOTTOM RIGHT DESKTOP & MOBILE FIXED) -->
+        <aside class="fixed bottom-6 right-6 z-50 flex items-center gap-2">
+          <a
+            class="floating-wa group flex items-center gap-space-sm pl-4 pr-5 py-3 rounded-full bg-secondary-container text-on-secondary-container font-label-lg text-label-lg shadow-[0_12px_30px_rgba(0,185,84,0.35)] hover:bg-secondary hover:text-on-secondary transition-all transform hover:scale-105 ring-2 ring-secondary/30"
+            href="https://wa.me/5511985633946?text=Ol%C3%A1%2C%20estou%20no%20site%20da%20JK%20Aquecedores%20e%20gostaria%20de%20atendimento"
+            rel="noopener noreferrer"
+            target="_blank"
+            title="Conversar no WhatsApp"
+          >
+            <svg class="wa-icon-lg" viewBox="0 0 24 24" aria-hidden="true" focusable="false" style="width: 26px; height: 26px;">
+              <path fill="currentColor" d="M12.04 2C6.58 2 2.15 6.36 2.15 11.8c0 2.09.68 4.1 1.85 5.75L2 22l4.64-1.94A9.76 9.76 0 0 0 12.04 21c5.46 0 9.9-4.36 9.9-9.8S17.5 2 12.04 2Zm0 17.9a7.98 7.98 0 0 1-4.08-1.13l-.29-.17-2.75 1.15 1.13-2.68-.18-.28A8.08 8.08 0 1 1 12.04 19.9Zm4.42-6.02c-.24-.12-1.44-.71-1.66-.79-.22-.08-.38-.12-.54.12-.16.24-.62.79-.76.95-.14.16-.28.18-.52.06-.24-.12-1.02-.38-1.94-1.2-.72-.64-1.2-1.43-1.34-1.67-.14-.24-.02-.37.1-.49.1-.1.24-.28.36-.42.12-.14.16-.24.24-.4.08-.16.04-.3-.02-.42-.06-.12-.54-1.3-.74-1.78-.2-.48-.4-.42-.54-.43h-.46c-.16 0-.42.06-.64.3-.22.24-.84.82-.84 2s.86 2.31.98 2.47c.12.16 1.67 2.56 4.05 3.58.57.25 1.02.4 1.37.51.57.18 1.09.15 1.5.09.46-.07 1.44-.59 1.64-1.16.21-.57.21-1.06.15-1.16-.06-.1-.22-.16-.46-.28Z"/>
+            </svg>
+            <span class="hidden sm:inline">Plantão WhatsApp</span>
+          </a>
+        </aside>
+        <!-- MICRO INTERACTION JAVASCRIPT -->
+        <script>
+          function handleFormSubmit(event) {
+            event.preventDefault();
+            var servico = document.getElementById("formServico").value;
+            var marca = document.getElementById("formMarca").value;
+            var local = document.getElementById("formLocal").value;
+            var nome = document.getElementById("formNome").value;
+            var telefone = document.getElementById("formTelefone").value;
+
+            var textMessage =
+              "Olá JK Aquecedores! Meu nome é " +
+              encodeURIComponent(nome) +
+              ".%0A*Serviço:* " +
+              encodeURIComponent(servico) +
+              "%0A*Marca:* " +
+              encodeURIComponent(marca) +
+              "%0A*Localização:* " +
+              encodeURIComponent(local) +
+              "%0A*Meu Contato:* " +
+              encodeURIComponent(telefone);
+
+            window.open(
+              "https://wa.me/5511985633946?text=" + textMessage,
+              "_blank",
+            );
+          }
+        </script>
+      </div>
+    </main>
+    <footer
+      class="w-full bg-surface-container-lowest border-t border-surface-container-highest/60 text-on-surface-variant pt-space-2xl pb-space-xl"
+    >
+      <div class="max-w-7xl mx-auto px-margin">
+        <div
+          class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-space-xl mb-space-2xl"
+        >
+          <div>
+            <div class="flex items-center gap-space-sm mb-space-md">
+              <span
+                class="font-headline-md text-headline-md text-on-surface uppercase tracking-tight"
+                >JK
+                <span
+                  class="text-primary-container font-headline-md text-headline-md"
+                  >Aquecedores</span
+                ></span
+              >
+            </div>
+            <p
+              class="font-body-sm text-body-sm text-on-surface-variant mb-space-md"
+            >
+              Especialistas certificados no diagnóstico, manutenção preventiva,
+              conserto e instalação de aquecedores a gás residenciais e
+              comerciais com garantia total de conformidade técnica.
+            </p>
+            <div
+              class="flex items-center gap-space-xs text-secondary font-label-sm text-label-sm"
+            >
+              <span class="material-symbols-outlined text-[16px]">verified</span
+              ><span class="">Técnicos Credenciados CREA &amp; CFT</span>
+            </div>
+          </div>
+          <div>
+            <h4
+              class="font-headline-md text-headline-md text-on-surface mb-space-md"
+            >
+              Marcas Autorizadas
+            </h4>
+            <ul
+              class="space-y-space-xs font-body-sm text-body-sm text-on-surface-variant"
+            >
+              <li class="">• Lorenzetti Brasil</li>
+              <li class="">• Bosch Termotecnologia</li>
+              <li class="">• Rinnai Aquecedores Digitais</li>
+              <li class="">• Rheem Water Heating</li>
+              <li class="">• Komeco &amp; Harman</li>
+              <li class="">• Cumulus e Yume</li>
+            </ul>
+          </div>
+          <div>
+            <h4
+              class="font-headline-md text-headline-md text-on-surface mb-space-md"
+            >
+              Canais Diretos
+            </h4>
+            <ul
+              class="space-y-space-sm font-body-sm text-body-sm text-on-surface-variant"
+            >
+              <li class="">
+                <a
+                  class="flex items-center gap-space-xs hover:text-secondary transition-colors"
+                  href="tel:11985633946"
+                  ><span class="material-symbols-outlined text-[16px]"
+                    >phone_iphone</span
+                  ><span class="">(11) 98563-3946 (WhatsApp)</span></a
+                >
+              </li>
+              <li class="">
+                <a
+                  class="flex items-center gap-space-xs hover:text-secondary transition-colors"
+                  href="tel:11997371408"
+                  ><span class="material-symbols-outlined text-[16px]"
+                    >call</span
+                  ><span class="">(11) 99737-1408 (Comercial)</span></a
+                >
+              </li>
+              <li class="">
+                <a
+                  class="flex items-center gap-space-xs hover:text-primary transition-colors"
+                  href="mailto:alexsanderalberto278@gmail.com"
+                  ><span class="material-symbols-outlined text-[16px]"
+                    >mail</span
+                  ><span class="break-all"
+                    >alexsanderalberto278@gmail.com</span
+                  ></a
+                >
+              </li>
+              <li class="">
+                <a
+                  class="flex items-center gap-space-xs hover:text-primary transition-colors"
+                  href="https://instagram.com/jk_aquecedores"
+                  rel="noopener noreferrer"
+                  target="_blank"
+                  ><span class="material-symbols-outlined text-[16px]"
+                    >photo_camera</span
+                  ><span class="">@jk_aquecedores</span></a
+                >
+              </li>
+            </ul>
+          </div>
+          <div>
+            <h4
+              class="font-headline-md text-headline-md text-on-surface mb-space-md"
+            >
+              Cobertura e Horários
+            </h4>
+            <p
+              class="font-body-sm text-body-sm text-on-surface-variant mb-space-sm"
+            >
+              São Paulo Capital (Zona Sul, Oeste, Norte, Leste, Centro), Grande
+              ABC, Alphaville, Granja Viana e Litoral Paulista.
+            </p>
+            <div
+              class="p-space-sm rounded-lg bg-surface-container-high/60 border border-surface-container-highest"
+            >
+              <div
+                class="flex items-center gap-space-xs text-on-surface font-label-sm text-label-sm mb-1"
+              >
+                <span
+                  class="material-symbols-outlined text-[16px] text-secondary"
+                  >lock_clock</span
+                ><span class="">Atendimento 24 Horas</span>
+              </div>
+              <p
+                class="font-body-sm text-body-sm text-on-surface-variant text-[12px]"
+              >
+                Despacho imediato de viaturas para contenção de vazamentos de
+                gás e paralisações de caldeiras residenciais.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div
+          class="pt-space-lg border-t border-surface-container-highest/40 flex flex-col md:flex-row items-center justify-between gap-space-md"
+        >
+          <p
+            class="font-body-sm text-body-sm text-on-surface-variant text-[13px]"
+          >
+            © 2024 JK Aquecedores. Todos os direitos reservados. Segurança e
+            Precisão Térmica.
+          </p>
+          <div
+            class="flex items-center gap-space-md font-label-sm text-label-sm"
+          >
+            <a
+              class="hover:text-on-surface transition-colors"
+              data-path="contato"
+              href="#"
+              >Política de Privacidade</a
+            ><span class="text-surface-bright">•</span
+            ><a
+              class="hover:text-on-surface transition-colors"
+              data-path="contato"
+              href="#"
+              >Termos de Garantia</a
+            >
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
